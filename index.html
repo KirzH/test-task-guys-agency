@@ -3,19 +3,88 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>wrump</title>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<ul>
-					<li><a></a></li>
-					<li><a></a></li>
-					<li><a></a></li>
-					<li><a></a></li>
-				</ul>
-			</nav>
+			<div class="header_nav">
+				<div class="header_item">
+					<nav>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Магазин</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-number"><a href="#">+7 495 744-00-50</a></div>
+			</div>
+			<div class="header-logo">
+				<div class="logo">wrump</div>
+				<div><button class="header_btn">Каталог</button></div>
+				<div class="header_search">
+					<input
+						class="header_input"
+						type="text"
+						placeholder="Поиск по OEM, производителю, модели и категории"
+					/>
+				</div>
+				<div class="header_person">1</div>
+				<div class="header_basket">2</div>
+			</div>
+			<div class="line"></div>
 		</header>
+
+		<main>
+			<div class="catalog">
+				Каталог / Запчасти / Двигатель / Винты гребные /
+				<span class="catalog_color">Гребной винт 3x7.3x5, Solas, 4011-073-05S</span>
+			</div>
+			<div class="screw_size">Гребной винт 3x7.3x5, Solas, 4011-073-05S</div>
+			<div class="article">Артикул: 401107305S</div>
+			<div class="screw_price">
+				<div class="screw">
+                    <img 
+                        class="screw_img"
+                        src="https://s3-alpha-sig.figma.com/img/3990/46f5/cb7999f423f9a03e522fd48c6aa78a87?Expires=1618790400&Signature=QOxcJnhtTPdoHrQr8BTQa-vUaXnZCee3U5AqfNQNibN3JrLfvvaMrNYlAo9xvNWCDtIx4DBQaIOtF8B41AI8cF7oXUVANgKr0eKcqnXCAbklGJOQMyKY0qkmdlZsH8MA-WB1n7Kqr5bzp4vokjFMleW7bC45ViwedrZ-6fksYR9mS5u-YkYPUh2tZeWQUPgiEmHuiu8WIby8R0T45e63EtkB8pdbN6cT2nJthJ3bH4CqKkmajPvE9m2fhCybj8VV45RM-qTXb1riTQvD~OnpbWT-l~Daf0lsIZpFt954lzRmviI-SHTzsFFbiTURIdpGXjlDXIcSXgo1FG~uqufSjA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                    />
+                </div>
+                <div class="screw_description">
+                    <div class="model">Модель: 3 лопасти</div>
+                    <div class="btn_blades">
+                        <button class="btn_three_blades">3 лопасти</button>
+                        <button class="btn_four_blades">4 лопасти</button>
+                    </div>
+                    <div class="description">
+                        <div class="description_OEM">
+                            <div class="oem">OEM</div>
+                            <div class="oem_number">3411-135-13</div>
+                        </div>
+                        <div class="manufacturer">
+                            <div class="producer">Производитель техники</div>
+                            <div class="producer_name">Yamaha</div>
+                        </div>
+                        <div class="brand_skipper">
+                            <div class="brand">Бренд</div>
+                            <div class="brand_name">Skipper</div>
+                        </div>
+                        <div class="structure">
+                            <div class="material">Материал</div>
+                            <div class="structure_al">Алюминий</div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div class="first_price">3 940</div>
+                        <div class="second_price">1 970 </div>
+                    </div>
+                    <div>
+                        <button class="btn_inBasket">в корзину</button>
+                    </div>
+                </div>
+			</div>
+		</main>
 
 		<script src="./index.js"></script>
 	</body>
