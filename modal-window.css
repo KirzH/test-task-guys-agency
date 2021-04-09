@@ -1,0 +1,8 @@
+.modal_window {
+	display: none;
+	position: fixed;
+	width: 595px;
+	height: 400px;
+	z-index: 1000;
+	overflow: auto;
+}

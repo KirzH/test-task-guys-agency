@@ -127,9 +127,16 @@ li {
 	margin-left: 35px;
 }
 
-.header_basket {
+/* .header_basket {
 	padding-left: 10px;
 	margin-top: 28px;
+	margin-left: 38px;
+	background: url(./img/basket.svg) no-repeat;
+} */
+
+.btn {
+	padding-left: 10px;
+	margin-top: 8px;
 	margin-left: 38px;
 	background: url(./img/basket.svg) no-repeat;
 }
