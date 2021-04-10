@@ -134,7 +134,9 @@ li {
 	background: url(./img/basket.svg) no-repeat;
 } */
 
-.btn {
+.btn_basket {
+	height: 27px;
+	width: 28px;
 	padding-left: 10px;
 	margin-top: 8px;
 	margin-left: 38px;
@@ -495,4 +497,125 @@ footer {
 	border-radius: 2px;
 	font-size: 16px;
 	line-height: 20px;
+}
+
+.modal_window {
+	display: none;
+	position: fixed;
+	width: 595px;
+	height: 400px;
+	z-index: 1000;
+	overflow: auto;
+	margin-top: 14px;
+	margin-left: 25px;
+	background: #ffff;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+}
+
+.modal_window_description {
+	width: 555px;
+	height: 360px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.modal_window__name {
+	display: flex;
+	flex-direction: row;
+}
+
+.name_basket {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.name_price {
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+.modal_screw {
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+.screw_name {
+	margin-left: 18px;
+	font-size: 16px;
+	color: #002051;
+}
+
+.second_screw_price {
+	margin-left: 9px;
+}
+
+.screw_price {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.available {
+	margin-top: 15px;
+	margin-left: 20px;
+	font-size: 17px;
+}
+
+.modal_basket {
+	margin-top: 5px;
+	margin-left: 105px;
+	color: #002051;
+}
+
+.modal_secondary {
+	margin-top: 16px;
+	margin-left: 30px;
+}
+
+.modal_filter {
+	margin-top: 20px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.fuel_filter {
+	margin-left: 20px;
+	font-size: 17px;
+	color: #002051;
+}
+
+.filter_price {
+	margin-top: 12px;
+	margin-left: 20px;
+}
+
+.filter_available {
+	margin-top: 12px;
+	margin-left: 20px;
+	font-size: 17px;
+	color: #002051;
+}
+
+.filter_basket {
+	margin-top: 5px;
+	margin-left: 190px;
+}
+.filter_secondary {
+	margin-top: 17px;
+	margin-left: 115px;
+}
+
+.modal_btn {
+	margin-top: 20px;
+	width: 555px;
+	height: 50px;
+	background: #e83850;
+	border-radius: 2px;
+	color: white;
+	font-size: 19px;
 }
