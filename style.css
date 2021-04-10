@@ -7,9 +7,10 @@ html {
 *::after {
 	box-sizing: inherit;
 }
+
 body {
-	/* font-family: "font-name", sans-serif; */
-	font-family: Montserrat;
+	font-family: 'Montserrat Subrayada', sans-serif;
+
 	margin: 0;
 }
 
@@ -50,10 +51,15 @@ header {
 li {
 	display: inline;
 	margin-left: 16px;
-	font-size: 18px;
+	font-size: 17px;
 	/* padding: 12px; */
 	line-height: 22px;
 	color: #002051;
+}
+
+.wrapper {
+	width: 1440px;
+	height: 1864px;
 }
 
 .header_nav {
@@ -68,10 +74,12 @@ li {
 }
 
 .header-number {
+	font-family: Montserrat;
 	font-weight: bold;
-	font-size: 17px;
+	margin-right: 100px;
+	font-size: 16px;
 	line-height: 22px;
-	padding-top: 20px;
+	padding-top: 19px;
 	text-align: right;
 	color: #002051;
 }
@@ -99,7 +107,7 @@ li {
 }
 
 .header_btn {
-	margin-left: 29px;
+	margin-left: 24px;
 	margin-top: 20px;
 	width: 127px;
 	height: 40px;
@@ -127,12 +135,10 @@ li {
 	margin-left: 35px;
 }
 
-/* .header_basket {
-	padding-left: 10px;
-	margin-top: 28px;
-	margin-left: 38px;
-	background: url(./img/basket.svg) no-repeat;
-} */
+.header_btn_basket {
+	margin-left: -5px;
+	margin-top: 20px;
+}
 
 .btn_basket {
 	height: 27px;
@@ -151,15 +157,16 @@ li {
 }
 
 .catalog {
-	margin-left: 94px;
-	margin-top: 39px;
+	margin-left: 97px;
+	margin-top: 37px;
 	line-height: 22px;
 	color: #002051;
-	font-size: 19px;
+	font-size: 17px;
 }
 
 .catalog_color {
-	font-size: 20px;
+	margin-left: 20px;
+	font-size: 17px;
 	color: #99a6b9;
 }
 
@@ -170,9 +177,9 @@ li {
 
 .screw_size {
 	margin-left: 94px;
-	margin-top: 40px;
+	margin-top: 45px;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 26px;
 	line-height: 29px;
 	color: #002051;
 }
@@ -180,19 +187,20 @@ li {
 .article {
 	padding-left: 94px;
 	padding-top: 20px;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 22px;
 	color: #002051;
 }
 
 .screw {
-	margin-left: 201px;
-	margin-top: 40px;
+	margin-left: 180px;
+	margin-top: 30px;
 	width: 503px;
 	height: 503px;
 }
 
 .screw_description {
+	margin-top: -10px;
 	margin-left: 139px;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 	border-radius: 2px;
@@ -504,11 +512,11 @@ footer {
 	position: fixed;
 	width: 595px;
 	height: 400px;
-	z-index: 1000;
+	z-index: 1;
 	overflow: auto;
 	margin-top: 14px;
 	margin-left: 25px;
-	background: #ffff;
+	background: rgb(255, 255, 255);
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 	border-radius: 2px;
 }

@@ -3,267 +3,286 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
 		<title>wrump</title>
 	</head>
 	<body>
-		<header>
-			<div class="header_nav">
-				<div class="header_item">
-					<nav>
-						<ul class="">
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Возврат</a></li>
-							<li><a href="#">Магазин</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header-number"><a href="#">+7 495 744-00-50</a></div>
-			</div>
-			<div class="header-logo">
-				<div class="logo">
-					<div class="logo_wr">
-						<img src="./img/w.svg" alt="w" />
-						<img src="./img/r.svg" alt="r" />
-					</div>
-					<div class="logo_ump">
-						<img src="./img/u.svg" alt="u" />
-						<img src="./img/m.svg" alt="m" />
-						<img src="./img/p.svg" alt="p" />
-					</div>
-				</div>
-				<div><button class="header_btn">Каталог</button></div>
-				<div>
-					<input
-						class="header_search"
-						type="text"
-						placeholder="Поиск по OEM, производителю, модели и категории"
-					/>
-				</div>
-				<div class="header_person">
-					<img src="./img/person.svg" alt="person" />
-				</div>
-				<div>
-					<!-- <img src="./img/Ellipse 15.svg" alt="elipse" /> -->
-					<!-- <a class="btn btn-primary" href="#" id="btn_basket"
-						><img src="./img/Ellipse 15.svg"
-					/></a> -->
-					<button class="btn_basket btn-primary" id="btn_basket"></button>
-				</div>
-			</div>
-			<div class="header_line"></div>
-		</header>
-
-		<main>
-			<div class="catalog">
-				Каталог / Запчасти / Двигатель / Винты гребные /
-				<span class="catalog_color"
-					>Гребной винт 3x7.3x5, Solas, 4011-073-05S</span
-				>
-			</div>
-			<div class="screw_size">Гребной винт 3x7.3x5, Solas, 4011-073-05S</div>
-			<div class="article">Артикул: 401107305S</div>
-			<div class="screw_price">
-				<div class="screw">
-					<img class="screw_img" src="./img/screw.png" />
-				</div>
-				<div class="screw_description">
-					<div class="model">Модель: 3 лопасти</div>
-					<div class="btn_blades">
-						<button class="btn_three_blades">3 лопасти</button>
-						<button class="btn_four_blades">4 лопасти</button>
-					</div>
-					<div class="description">
-						<div class="description_OEM">
-							<div class="oem">OEM</div>
-							<div class="oem_number">3411-135-13</div>
-						</div>
-						<div class="manufacturer">
-							<div class="producer">Производитель техники</div>
-							<div class="producer_name">Yamaha</div>
-						</div>
-						<div class="brand_skipper">
-							<div class="brand">Бренд</div>
-							<div class="brand_name">Skipper</div>
-						</div>
-						<div class="structure">
-							<div class="material">Материал</div>
-							<div class="structure_al">Алюминий</div>
+		<div class="wrapper">
+			<div class="modal_window" id="myModal">
+				<div class="modal_window_description">
+					<div class="modal_window__name">
+						<div class="name_basket">Корзина:</div>
+						<div class="name_price">
+							<img src="./img/2420.svg" alt="price" />
 						</div>
 					</div>
-					<div class="price">
-						<div class="first_price">
-							<img src="./img/Price.svg" alt="price" />
+					<div class="modal_screw">
+						<div>
+							<img
+								src="./img/screw.png"
+								alt="modal_screw"
+								height="100px"
+								width="100px"
+							/>
 						</div>
-						<div class="second_price">
-							<img src="./img/Price2.svg" alt="price_two" />
+						<div>
+							<div class="screw_name">
+								Гребной винт 3x7.3x5, Solas, 4011-073-05S...
+							</div>
+							<div class="screw_price">
+								<div>
+									<img src="./img/1970.svg" alt="first_price" />
+								</div>
+								<div>
+									<img
+										class="second_screw_price"
+										src="./img/_1970.png"
+										alt="second_price"
+									/>
+								</div>
+							</div>
+							<div class="available">В наличии</div>
 						</div>
-					</div>
-					<div>
-						<button class="btn_inBasket">в корзину</button>
-					</div>
-				</div>
-			</div>
-			<div class="characteristics_name">
-				<div class="name">Характеристики</div>
-				<div class="line"></div>
-			</div>
-			<div class="characteristics">
-				<div class="block_one">
-					<div>
-						<div class="block_one_oem">OEM</div>
-						<div class="block_one_producer">Производитель техники</div>
-						<div class="block_one_brand">Бренд</div>
-						<div class="block_one_quantity">Количество лопастей</div>
-						<div class="block_one_material">Материал</div>
-					</div>
-					<div>
-						<div class="value_oem">3411-135-13</div>
-						<div class="value_producer">Yamaha</div>
-						<div class="value_brand">Skipper</div>
-						<div class="value_quantity">3 лопасти</div>
-						<div class="value_material">Алюминий</div>
-					</div>
-				</div>
-				<div class="block_two">
-					<div>
-						<div class="block_two_diameter">Диаметр, дюйм</div>
-						<div class="block_two_power">Мощность, л.с.</div>
-						<div class="block_two_step">Шаг, дюйм</div>
-						<div class="block_two_type">Тип лодочного мотора</div>
-						<div class="block_two_landing">Посадка на вал</div>
-					</div>
-					<div>
-						<div class="value_diameter">Шлицевая</div>
-						<div class="value_power">От 9.9 до 15</div>
-						<div class="value_step">11</div>
-						<div class="value_type">ПЛМ</div>
-						<div class="value_landing">Шлицевая</div>
-					</div>
-				</div>
-			</div>
-			<div class="applying">Применение</div>
-			<div class="motors">
-				<div class="motors_steps">
-					<div class="four_steps">4-тактные моторы Suzuki</div>
-					<div class="load_code">
-						<ul>
-							<li class="load_code_item"><a href="#">DF9.9B;</a></li>
-							<li class="load_code_item"><a href="#">DF8A;</a></li>
-							<li class="load_code_item"><a href="#">DF10A</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="motors_steps">
-					<div class="two_steps">2-тактные моторы Suzuki</div>
-					<div class="load_code__two_steps">
-						<a href="#">DT9.9A;</a>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<footer>
-			<div class="group">
-				<div class="group_consultation">Консультация</div>
-				<div class="group_answer">
-					<p>Заполните форму ниже и наш мастер</p>
-					<p>свяжется с вами, чтобы ответить на ваши вопросы</p>
-				</div>
-				<div class="phone_number">Телефон или e-mail</div>
-				<div class="group__name_number">
-					<div>
-						<input class="group_name" type="text" placeholder="Имя" />
-					</div>
-					<div>
-						<input class="group_number" type="text" placeholder="+7999" />
-					</div>
-				</div>
-				<div>
-					<button class="group_btn">Получить консультацию</button>
-				</div>
-			</div>
-		</footer>
-
-		<div class="modal_window" id="myModal">
-			<div class="modal_window_description">
-				<div class="modal_window__name">
-					<div class="name_basket">Корзина:</div>
-					<div class="name_price"><img src="./img/2420.svg" alt="price" /></div>
-				</div>
-				<div class="modal_screw">
-					<div>
-						<img
-							src="./img/screw.png"
-							alt="modal_screw"
-							height="100px"
-							width="100px"
-						/>
-					</div>
-					<div>
-						<div class="screw_name">
-							Гребной винт 3x7.3x5, Solas, 4011-073-05S...
-						</div>
-						<div class="screw_price">
+						<div>
 							<div>
-								<img src="./img/1970.svg" alt="first_price" />
+								<img
+									class="modal_basket"
+									src="img/modal_basket.svg"
+									alt="modal_basket"
+								/>
 							</div>
 							<div>
 								<img
-									class="second_screw_price"
-									src="./img/_1970.png"
-									alt="second_price"
+									class="modal_secondary"
+									src="./img/Secondary.svg"
+									alt="secondary"
 								/>
 							</div>
 						</div>
-						<div class="available">В наличии</div>
 					</div>
-					<div>
+					<div class="modal_filter">
 						<div>
 							<img
-								class="modal_basket"
-								src="img/modal_basket.svg"
-								alt="modal_basket"
+								src="./img/filter.svg"
+								alt="filter"
+								height="100"
+								width="100"
 							/>
 						</div>
 						<div>
-							<img
-								class="modal_secondary"
-								src="./img/Secondary.svg"
-								alt="secondary"
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="modal_filter">
-					<div>
-						<img src="./img/filter.svg" alt="filter" height="100" width="100" />
-					</div>
-					<div>
-						<div class="fuel_filter">Фильтр топливный Fleetguard</div>
-						<div>
-							<img class="filter_price" src="./img/450.svg" alt="" />
-						</div>
-						<div class="filter_available">В наличии</div>
-					</div>
-					<div>
-						<div>
-							<img
-								class="filter_basket"
-								src="img/modal_basket.svg"
-								alt="modal_basket"
-							/>
+							<div class="fuel_filter">Фильтр топливный Fleetguard</div>
+							<div>
+								<img class="filter_price" src="./img/450.svg" alt="" />
+							</div>
+							<div class="filter_available">В наличии</div>
 						</div>
 						<div>
-							<img class="filter_secondary" src="./img/Secondary.svg" alt="" />
+							<div>
+								<img
+									class="filter_basket"
+									src="img/modal_basket.svg"
+									alt="modal_basket"
+								/>
+							</div>
+							<div>
+								<img
+									class="filter_secondary"
+									src="./img/Secondary.svg"
+									alt=""
+								/>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<button class="modal_btn">Перейти в корзину</button>
+					<div>
+						<button class="modal_btn">Перейти в корзину</button>
+					</div>
 				</div>
 			</div>
+
+			<header>
+				<div class="header_nav">
+					<div class="header_item">
+						<nav>
+							<ul class="">
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Возврат</a></li>
+								<li><a href="#">Магазин</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-number"><a href="#">+7 495 744-00-50</a></div>
+				</div>
+				<div class="header-logo">
+					<div class="logo">
+						<div class="logo_wr">
+							<img src="./img/w.svg" alt="w" />
+							<img src="./img/r.svg" alt="r" />
+						</div>
+						<div class="logo_ump">
+							<img src="./img/u.svg" alt="u" />
+							<img src="./img/m.svg" alt="m" />
+							<img src="./img/p.svg" alt="p" />
+						</div>
+					</div>
+					<div>
+						<button class="header_btn">Каталог</button>
+					</div>
+					<div>
+						<input
+							class="header_search"
+							type="text"
+							placeholder="Поиск по OEM, производителю, модели и категории"
+						/>
+					</div>
+					<div class="header_person">
+						<img src="./img/person.svg" alt="person" />
+					</div>
+					<div class="header_btn_basket">
+						<button class="btn_basket btn-primary" id="btn_basket">
+							<img src="./img/Ellipse 15.svg" alt="elipse" />
+						</button>
+					</div>
+				</div>
+				<div class="header_line"></div>
+			</header>
+
+			<main>
+				<div class="catalog">
+					Каталог / Запчасти / Двигатель / Винты гребные /
+					<span class="catalog_color"
+						>Гребной винт 3x7.3x5, Solas, 4011-073-05S</span
+					>
+				</div>
+				<div class="screw_size">Гребной винт 3x7.3x5, Solas, 4011-073-05S</div>
+				<div class="article">Артикул: 401107305S</div>
+				<div class="screw_price">
+					<div class="screw">
+						<img class="screw_img" src="./img/screw.png" />
+					</div>
+					<div class="screw_description">
+						<div class="model">Модель: 3 лопасти</div>
+						<div class="btn_blades">
+							<button class="btn_three_blades">3 лопасти</button>
+							<button class="btn_four_blades">4 лопасти</button>
+						</div>
+						<div class="description">
+							<div class="description_OEM">
+								<div class="oem">OEM</div>
+								<div class="oem_number">3411-135-13</div>
+							</div>
+							<div class="manufacturer">
+								<div class="producer">Производитель техники</div>
+								<div class="producer_name">Yamaha</div>
+							</div>
+							<div class="brand_skipper">
+								<div class="brand">Бренд</div>
+								<div class="brand_name">Skipper</div>
+							</div>
+							<div class="structure">
+								<div class="material">Материал</div>
+								<div class="structure_al">Алюминий</div>
+							</div>
+						</div>
+						<div class="price">
+							<div class="first_price">
+								<img src="./img/Price.svg" alt="price" />
+							</div>
+							<div class="second_price">
+								<img src="./img/Price2.svg" alt="price_two" />
+							</div>
+						</div>
+						<div>
+							<button class="btn_inBasket">в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="characteristics_name">
+					<div class="name">Характеристики</div>
+					<div class="line"></div>
+				</div>
+				<div class="characteristics">
+					<div class="block_one">
+						<div>
+							<div class="block_one_oem">OEM</div>
+							<div class="block_one_producer">Производитель техники</div>
+							<div class="block_one_brand">Бренд</div>
+							<div class="block_one_quantity">Количество лопастей</div>
+							<div class="block_one_material">Материал</div>
+						</div>
+						<div>
+							<div class="value_oem">3411-135-13</div>
+							<div class="value_producer">Yamaha</div>
+							<div class="value_brand">Skipper</div>
+							<div class="value_quantity">3 лопасти</div>
+							<div class="value_material">Алюминий</div>
+						</div>
+					</div>
+					<div class="block_two">
+						<div>
+							<div class="block_two_diameter">Диаметр, дюйм</div>
+							<div class="block_two_power">Мощность, л.с.</div>
+							<div class="block_two_step">Шаг, дюйм</div>
+							<div class="block_two_type">Тип лодочного мотора</div>
+							<div class="block_two_landing">Посадка на вал</div>
+						</div>
+						<div>
+							<div class="value_diameter">Шлицевая</div>
+							<div class="value_power">От 9.9 до 15</div>
+							<div class="value_step">11</div>
+							<div class="value_type">ПЛМ</div>
+							<div class="value_landing">Шлицевая</div>
+						</div>
+					</div>
+				</div>
+				<div class="applying">Применение</div>
+				<div class="motors">
+					<div class="motors_steps">
+						<div class="four_steps">4-тактные моторы Suzuki</div>
+						<div class="load_code">
+							<ul>
+								<li class="load_code_item"><a href="#">DF9.9B;</a></li>
+								<li class="load_code_item"><a href="#">DF8A;</a></li>
+								<li class="load_code_item"><a href="#">DF10A</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="motors_steps">
+						<div class="two_steps">2-тактные моторы Suzuki</div>
+						<div class="load_code__two_steps">
+							<a href="#">DT9.9A;</a>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer>
+				<div class="group">
+					<div class="group_consultation">Консультация</div>
+					<div class="group_answer">
+						<p>Заполните форму ниже и наш мастер</p>
+						<p>свяжется с вами, чтобы ответить на ваши вопросы</p>
+					</div>
+					<div class="phone_number">Телефон или e-mail</div>
+					<div class="group__name_number">
+						<div>
+							<input class="group_name" type="text" placeholder="Имя" />
+						</div>
+						<div>
+							<input class="group_number" type="text" placeholder="+7999" />
+						</div>
+					</div>
+					<div>
+						<button class="group_btn">Получить консультацию</button>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 		<script src="./index.js"></script>
