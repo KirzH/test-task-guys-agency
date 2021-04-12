@@ -599,8 +599,15 @@ footer {
 	color: #ffffff;
 }
 
-.modal_window {
+.myModal {
 	display: none;
+	width: 1440px;
+	height: 100%;
+	background-color: #bbbbbb;
+}
+
+.modal_window {
+	/* display: none; */
 	position: fixed;
 	width: 595px;
 	height: 400px;
